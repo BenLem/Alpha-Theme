@@ -1,9 +1,10 @@
-<?php   if(has_posts()): $i = 0; while(posts()): if(article_category_slug() == "articles-en-avant"): $i++; endif; endwhile;
-        if($i != 0): ?>
+<?php   $i=0; while(latest_posts()){if(article_category_slug()=="articles-en-avant"){++$i;}};
+        if($i!=0): ?>
 
 <div class="slider">
     <ul>
-        <?php while(posts()): if(article_category_slug() == "articles-en-avant"): ?>
+        <?php   while(latest_posts()):
+                if(article_category_slug()=="articles-en-avant"): ?>
         <li style="background-image: url('<?php echo article_custom_field('miniature'); ?>')">                     
             <div class="content" href="<?php echo article_url(); ?>">
                 <div class="cat"><b><?php echo article_custom_field('theme'); ?></b></div>
@@ -17,4 +18,4 @@
     </ul>
 </div>
 
-<?php endif; endif; ?>
+<?php endif; ?>
