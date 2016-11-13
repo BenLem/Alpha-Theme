@@ -1,0 +1,17 @@
+————————
+#Catégories obligatoires :
+————————
+| Slug : articles-en-avant
+———
+| Slug : articles
+———
+| Slug : quick-news
+————————
+
+————————
+#Custom fields
+————————
+| Slug : theme
+———
+| Slug : miniature
+————————

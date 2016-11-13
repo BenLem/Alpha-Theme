@@ -1,0 +1,5 @@
+Theme name:    Alpha
+Description:   Thème Omicron pour Alpha. Made for Anchor
+Author name:   BenLem
+Author site:   http://twitter.com/BenLem_
+License:       CC-BY
