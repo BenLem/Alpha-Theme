@@ -306,6 +306,31 @@ section.posts {
     padding-right: 50px;
 }
 
+.wrap-main.posts {
+    box-shadow: none;
+    background: none;
+}
+
+section.posts.full {
+    width: 100%;
+    border-right: none;
+    padding-right: 0px;
+    border-bottom: none;
+    margin-top: -50px;
+}
+
+section.posts.full .post {
+    padding: 30px 40px;
+    box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+section.posts.full .post header {
+    padding-bottom: 18px;
+    border-bottom: solid #efefef 1px;
+}
+
 section.posts ul li {
     list-style: none;
 }
@@ -699,7 +724,8 @@ section.page {
 
 .posts .pagination:after {
     content: '';
-    width: 270px;
+    width: 100%;
+    max-width: 390px;
     position: absolute;
     right: 0px;
     bottom: 50%;
@@ -712,7 +738,8 @@ section.page {
 
 .posts .pagination:before {
     content: '';
-    width: 270px;
+    width: 100%;
+    max-width: 390px;
     position: absolute;
     left: 0px;
     bottom: 50%;
