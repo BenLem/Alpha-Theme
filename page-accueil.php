@@ -31,7 +31,7 @@
                     
                 if ($more == true) {?>
                     <li class='post'>
-                        › <a href="#"><span class="title">Voir tous les articles</span></a>
+                        › <a href='<?=base_url();?>articles'><span class="title">Voir tous les articles</span></a>
                     </li>
                 <?php };?>
                 </ul>
@@ -41,9 +41,3 @@
 <?php   theme_include('sidebar'); ?><!----->
 <a href="<?php echo base_url(); ?>admin/posts/" class="admin">Administration</a>
 <?php   theme_include('footer'); ?>
-    
-    
-    
-    
-    
-    
