@@ -870,6 +870,31 @@ aside.sidebar {
     margin-top: 50px;
 }
 
+.sidebar .discord {
+    margin-top: 30px;
+}
+
+.sidebar .discord a {
+    display: block;
+    background: url('https://discordapp.com/assets/35d75407bd75d70e84e945c9f879bab8.svg') #738bd7 no-repeat;
+    background-size: 124px 34px;
+    background-position: 20px 14px;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    text-align: right;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all ease .3s;
+    font-size: 15px;
+}
+
+.sidebar .discord a:hover {
+    transition: all ease .1s;
+    display: block;
+    background-color: #5f73b2;
+}
+
 .sidebar h1.title {
     font-size: 25px;
     padding-bottom: 15px;
