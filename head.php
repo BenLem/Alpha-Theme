@@ -1,12 +1,15 @@
 <head>
     <title><?php echo page_title('Page non trouvée'); ?> - <?php echo site_name(); ?></title>
     <meta name="description" content="<?php echo site_description(); ?>">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
     <link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
     <link rel="stylesheet" href="<?php echo theme_url('/css/icomoon.css'); ?>">
     <link rel="stylesheet" href="<?php echo theme_url('/slider/unslider.css'); ?>">
     <link rel="stylesheet" href="<?php echo theme_url('/slider/unslider-dots.css'); ?>">
+    
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700' rel='stylesheet' type='text/css'>

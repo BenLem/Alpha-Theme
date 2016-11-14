@@ -6,7 +6,7 @@ body {
 }
 
 div.wrap-main {
-    width: 1110px;
+    max-width: 1110px;
     margin: auto;
     box-shadow: 0px 2px 3px rgba(0,0,0,.2);
     background-color: #fff;
@@ -71,7 +71,7 @@ b {
 }
 
 nav.main {
-    width: 1070px;
+    max-width: 1070px;
     margin: auto;
     position: relative;
 }
@@ -104,7 +104,8 @@ nav.main nav a.inactive {
 
 nav.main .banner {
     display: block;
-    width: 155px; height: 170px;
+    width: 100%;
+    max-width: 155px; height: 170px;
     position: absolute;
     top:-32px; left: 466px;
     background-image: url('../img/alpha.png');
@@ -163,7 +164,7 @@ article.quick-news {
     font-size: 15px;
     position: relative;
     box-shadow: 0px 3px 5px rgba(0,0,0,.06);
-    width: 1110px;
+    max-width: 1110px;
 }
 
 article.quick-news.rouge {
@@ -227,7 +228,7 @@ article.quick-news.rouge p:before, article.quick-news.orange p:before {
     background-color: #fff;
     box-shadow: 0px 3px 5px rgba(0,0,0,.2);
     position: absolute;
-    width: 357px;
+    max-width: 357px;
     top: 62px;
     margin-left: auto;
     margin-right: auto;
@@ -300,10 +301,10 @@ h1.cat b {
 }
 
 section.posts {
-    width: 454px;
+    width: 50%;
     display: inline-block;
     border-right: solid #eee 2px;
-    padding-right: 50px;
+    padding-right: 4%;
 }
 
 .wrap-main.posts {
@@ -333,6 +334,7 @@ section.posts.full .post header {
 
 section.posts ul li {
     list-style: none;
+    position: relative;
 }
 
 .post {
@@ -351,7 +353,18 @@ section.posts ul li {
     text-decoration: none;
 }
 
-.post .title {
+.post h3.title {
+    position: relative;
+    padding-left: 10px;
+}
+
+.post h3.title:before {
+    content: '›';
+    position: absolute;
+    top: -1px; left: 0px;
+}
+
+.post span.title {
     display: inline-block;
     font-family: "Roboto Condensed", sans-serif;
     font-size: 18px;
@@ -360,9 +373,10 @@ section.posts ul li {
     color: #2D3039;
     position: relative;
     margin-top: -3px;
+    max-width: calc(100% - 150px);
 }
 
-.post .title:after {
+.post span.title:after {
     content: '';
     width: 0;
     position: absolute;
@@ -378,8 +392,8 @@ section.posts ul li {
 	transition: all 0.25s;
 }
 
-.post .title:hover:after,
-.post .title:active:after {
+.post span.title:hover:after,
+.post span.title:active:after {
     width: 100%;
 }
 
@@ -389,8 +403,9 @@ section.posts ul li {
 }
 
 .post .infos {
-    float: right;
     opacity: .5;
+    position: absolute;
+    top: 10px; right: 0px;
 }
 
 .post .excerpt {
@@ -459,10 +474,10 @@ section.posts ul li {
 
 
 section.page {
-    width: 559px;
+    max-width: 55%;
     display: inline-block;
     border-right: solid #eee 2px;
-    padding-right: 50px;
+    padding-right: 4%;
 }
 
 .single h1.title {
@@ -655,7 +670,7 @@ section.page {
 }
 
 .single .btn.vote {
-    width: 500px;
+    max-width: 500px;
     display: block;
     margin: 30px auto;
 }
@@ -711,7 +726,7 @@ section.page {
     display: inline-block;
     top: 0px;
     position: relative;
-    width: 156px;
+    max-width: 156px;
     z-index: 100;
     background-color: #E8E8E8;
     padding: 0 12px;
@@ -772,7 +787,7 @@ section.page {
 /* SIDEBAR */
 
 section.page + aside.sidebar {
-    width: 349px;
+    width: 35%;
 }
 
 section.page + aside.sidebar .hide {
@@ -791,8 +806,8 @@ section.page + aside.sidebar .ip + .copy {
 aside.sidebar {
     display: inline-block;
     vertical-align: top;
-    margin-left: 50px;
-    width: 454px;
+    margin-left: 5%;
+    width: 40%;
 }
 
 .sidebar .wrap {
@@ -834,7 +849,7 @@ aside.sidebar {
     border-bottom: none;
     font-weight: 700;
     padding: 10px;
-    width: 70px;
+    max-width: 70px;
     color: #589057;
     text-align: center;
     border-radius: 7px;
@@ -871,7 +886,7 @@ aside.sidebar {
 }
 
 .sidebar .discord {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .sidebar .discord a {
@@ -914,25 +929,24 @@ aside.sidebar {
     color: #666d83;
     font-size: 20px;
     font-weight: 300;
-    text-align: right;
     margin-top: 16px;
     position: relative;
 }
 
-.sidebar .alpha:before {
-    content: '';
-    width: 50%;
+.sidebar .alpha .bar {
+    background-color: #eee;
+    height: 1px;
+    width: 100%;
+    margin-top: 26px;
+}
+
+.sidebar .alpha .right {
     position: absolute;
-    left: 0px;
-    bottom: 50%;
-    border-width: 0 0 1px;
-    border-style: solid;
-    border-color: #eee;
-    content: '';
-	position: absolute;
-    -webkit-transition: all 0.25s;
-	-moz-transition: all 0.25s;
-	transition: all 0.25s;
+    top: -10px;
+    right: 0px;
+    text-align: right;
+    background-color: #fff;
+    padding-left: 15px;
 }
 
 .sidebar .alpha .state {
@@ -984,7 +998,7 @@ footer.main:hover p.left {
 }
 
 footer.main .wrap {
-    width: 1170px;
+    max-width: 1170px;
     margin: auto;
     position: relative;
 }
@@ -1024,7 +1038,7 @@ footer.main p.left {
 footer.main p.right {
     position: absolute;
     top: -8px; right: 0px;
-    width: 650px;
+    max-width: 650px;
     text-align: right;
     cursor: default;
 }
@@ -1113,4 +1127,111 @@ footer.main p.right a:last-child {
 
 .icon-heart.red {
     color: #ff6a6a;
+}
+
+@media screen and (max-width: 1100px) {
+    section.posts {
+        width: 50%;
+    }
+    
+    aside.sidebar {
+        width: 40%;
+    }
+    
+    .sidebar .discord a .break {
+        display: none;
+    }
+    
+    section.main {
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    section.posts {
+        width: 55%;
+    }
+    
+    aside.sidebar {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    
+    .slider li {
+        height: 355px;
+    }
+    
+    .slider li .content {
+        top: 32px;
+    }
+    
+    .unslider-nav {
+        top: 320px !important;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    
+    div.wrap-main {
+        box-shadow: none;
+        background-color: transparent;
+    }
+    
+    section.posts {
+        box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+        background-color: #fff;
+        padding: 6% 8%;
+        width: 84%;
+        border-right: none;
+    }
+    
+    aside.sidebar {
+        box-shadow: 0px 2px 3px rgba(0,0,0,.2);
+        background-color: #fff;
+        display: block;
+        margin: 4% 15%;
+        width: 70%;
+    }
+    
+    aisde.sidebar .break {
+        display: block;
+    }
+    
+    .slider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    
+    section.posts {
+        padding: 6% 8%;
+        width: 100%;
+        border-right: none;
+    }
+    
+    aside.sidebar {
+        
+    }
+}
+
+@media screen and (max-width: 580px) {
+    
+    section.posts {
+        margin: 1% 2%;
+        width: 96%;
+        border-right: none;
+    }
+    
+    aside.sidebar {
+        
+    }
+    
+    .slider {
+        display: none;
+    }
 }

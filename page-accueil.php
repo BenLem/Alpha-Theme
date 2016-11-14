@@ -17,7 +17,7 @@
                     if ($article_count[0] > $max_article_count) {$more = true;};
                     if (article_category_slug()<>'quick-news' and $article_count[1] < $max_article_count) : ?>
                         <li class='post'>
-                            › <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><span class="title"><?php echo article_title(); ?></span></a>
+                            <h3 class='title'><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><span class="title"><?php echo article_title(); ?></span></a></h3>
 
                                 <span class="infos"><span class="cat"><?php echo article_custom_field('theme'); ?></span> - <?php echo gmdate("d/m", article_time()); ?></span>
 

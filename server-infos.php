@@ -10,12 +10,12 @@ $statut = @fsockopen("91.134.185.171", 25565, $errno, $errstr, 1);
             $d = explode("\x00", $d);
             fclose($statut);
                 
-            echo "<div class='state on'></div><p class='players'><b class='o'>".$d[4]."</b>/".$d[5]." connectés</p>";
+            echo "<div class='right'><div class='state on'></div><p class='players'><b class='o'>".$d[4]."</b>/".$d[5]." connectés</p></div>";
             
         }
     } else {
         
-        echo "<div class='state off'></div><p class='players'><b class='o'>0</b>/64 connectés</p>";
+        echo "<div class='right'><div class='state off'></div><p class='players'><b class='o'>0</b>/64 connectés</p></div>";
         
     }
 ?>

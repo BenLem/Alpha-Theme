@@ -7,7 +7,7 @@
             <ul>
                 <?php while(posts()): if(article_category_slug()<>"quick-news"): ?>
                     <li class='post'>
-                        <header>› <a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><h3 class="title"><?php echo article_title(); ?></h3></a>
+                        <header><h3 class='title'><a href="<?php echo article_url(); ?>" title="<?php echo article_title(); ?>"><span class='title'><?php echo article_title(); ?></span></a></h3>
 
                         <span class="infos"><span class="cat"><?php echo article_custom_field('theme'); ?></span> - <?php echo gmdate("d/m", article_time()); ?></span></header>
 

@@ -11,9 +11,11 @@
                     <a href="<?php echo base_url(); ?>forum/t/support"><span data-hover="Support">Support</span></a>
                     <a href="<?php echo base_url(); ?>forum/"><span data-hover="Forum">Forum</span></a>
                 </nav>
-
-                <a href="<?php echo base_url(); ?>" class="banner"></a>
-
+                
+                <div class='banner-wrap'>
+                    <a href="<?php echo base_url(); ?>" class="banner"></a>
+                </div>
+                
                 <nav class='cl-effect-5 right'>
                     <a href="<?php echo base_url(); ?>voter/"><span data-hover="Voter">Voter</span></a>
                     <a class="inactive" href="<?php echo base_url(); ?>boutique/"><span data-hover="Shop">Shop</span></a>
