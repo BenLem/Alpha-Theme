@@ -2,13 +2,15 @@
 
 <div class="wrap-main">
     <div class="thumbnail" style="background-image: url('<?php echo article_custom_field('miniature'); ?>');">
-        <h2 class="cat"><?php echo article_custom_field('theme'); ?></h2>
+        <h3 class="cat"><?php echo article_custom_field('theme'); ?></h3>
         <h1 class="title"><?php echo article_title(); ?></h1>
     </div>
     <section class="main large">
         <section class="page">
             <article class="single">
                 <div class="content">
+                    <h2 class="title break"><?php echo article_title(); ?></h2>
+                    
                     <div class="post-content">
                         <?php echo article_markdown(); ?>
                     </div>
