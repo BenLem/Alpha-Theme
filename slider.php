@@ -6,12 +6,12 @@
         <?php   while(latest_posts()):
                 if(article_category_slug()=="articles-en-avant"): ?>
         <li style="background-image: url('<?php echo article_custom_field('miniature'); ?>')">                     
-            <div class="content" href="<?php echo article_url(); ?>">
+            <div class="content">
                 <div class="cat"><b><?php echo article_custom_field('theme'); ?></b></div>
 
                 <a href="<?php echo article_url(); ?>" class="title"><?php echo article_title(); ?></a>
 
-                <div style="height: 79px; overflow: hidden;" href="<?php echo article_url(); ?>" class="excerpt"><?php echo strip_tags(excerpt(article_html(), 165)); ?></div>
+                <div style="height: 79px; overflow: hidden;" class="excerpt"><?php echo strip_tags(excerpt(article_html(), 165)); ?></div>
             </div>
         </li>
         <?php endif; endwhile; ?>

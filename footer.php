@@ -4,31 +4,77 @@
         <footer class="main">
             <div class="wrap">
                 <p class="left">
-                    <b style="font-size: 20px;"><span style="color: rgba(211, 1, 14, 0.63)">ALPHA</span></b></span> est un serveur PvP/Faction <a href="http://minecraft.net/">Minecraft™</a>
+                    <b style="font-size: 20px;"><span style="color: rgba(211, 1, 14, 0.63)">ALPHA</span></b> est un serveur PvP/Faction <a href="http://minecraft.net/">Minecraft™</a>
                 </p>
 
                 <p class="right">
-                    Tous les <b>contenus originaux</b> de ce site sont sous licence <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons</a>
-                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a>
+                    &copy <?php echo date('Y'); ?> Alpha-Craft
                 </p>
             </div>
         </footer>
 
         <!-- Scripts -->
+        <script>
+            function drpDown() {
+                document.getElementById("nav-drpdwn").classList.toggle("show");
+                document.getElementById("menu-btn").classList.toggle("show");
+            }
+            
+            window.onclick = function(event) {
+              if (!event.target.matches('#menu-btn')) {
+
+                var dropdowns = document.getElementsByClassName("drpdwn");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+        </script>
+
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
+        
         <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    
+        <script>$(function(){
+                var ink, d, x, y;
+                $(".ripple").click(function(e){
+                    if($(this).find(".ink").length === 0){
+                    $(this).prepend("<span class='ink'></span>");
+                }
+
+                ink = $(this).find(".ink");
+                ink.removeClass("animate");
+
+                if(!ink.height() && !ink.width()){
+                    d = Math.max($(this).outerWidth(), $(this).outerHeight());
+                    ink.css({height: d, width: d});
+                }
+
+                x = e.pageX - $(this).offset().left - ink.width()/2;
+                y = e.pageY - $(this).offset().top - ink.height()/2;
+
+                ink.css({top: y+'px', left: x+'px'}).addClass("animate");
+                });
+            });</script>
+
         <script>(function(d, s, id) {
-              var js, fjs = d.getElementsByTagName(s)[0];
-              if (d.getElementById(id)) return;
-              js = d.createElement(s); js.id = id;
-              js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
-              fjs.parentNode.insertBefore(js, fjs);
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                fjs.parentNode.insertBefore(js, fjs);
             }(document, 'script', 'facebook-jssdk'));</script>
-        <script type="text/javascript" src="/scripts/retina.js"></script>
-        <script src="<?php echo theme_url('/slider/unslider-min.js'); ?>"></script>
+        
+        <script src="<?php echo theme_url('/lib/slider/unslider-min.js'); ?>"></script>
+
         <script>$(function() { $('.slider').unslider({
             arrows: false,
             autoplay: true,
-            delay: 6000,
-        }) })</script>
+            delay: 6000, })})</script>
+
     </body>
 </html>
