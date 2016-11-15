@@ -18,7 +18,7 @@
             <div class="twitter">
                 <h1 class="title">Suivez-nous sur <b>Twitter</b></h1>
                 
-                <a class="twitter-timeline" href="https://twitter.com/alpha_craft_co" data-widget-id="706065782334222336" data-chrome="noheader nofooter noborders transparent" height="440">>Tweets de @alpha_craft_co</a>
+                <a class="twitter-timeline" href="https://twitter.com/alpha_craft_co" data-widget-id="706065782334222336" data-chrome="noheader nofooter noborders transparent" height="420">>Tweets de @alpha_craft_co</a>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
             </div>
         </div>

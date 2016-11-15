@@ -1,16 +1,17 @@
 <?php   theme_include('header'); ?>
 
-<section class="page">
-    <article class="single">
-        <div class="content">
-            <h1 class="title"><?php echo page_title(); ?></h1>
+<div class='wrap-main page'>
+    <section class='main'>
+        <article class="single page">
+            <div class="content">
+                <h1 class="title"><?php echo page_title(); ?></h1>
 
-            <div class="post-content">
-                <?php echo page_content(); ?>
+                <div class="post-content">
+                    <?php echo page_content(); ?>
+                </div>
             </div>
-        </div>
-    </article>
-</section>
+        </article>
+    </section>
+</div>
 
-<a href="<?php echo base_url(); ?>admin/posts/edit/<?php echo article_id(); ?>" class="admin">Éditer l'article</a>
 <?php   theme_include('footer'); ?>

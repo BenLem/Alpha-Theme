@@ -512,6 +512,7 @@ section.posts ul li {
     text-align: center;
     background-size: 150%;
     background-position: center;
+    background-color: #2D3039;
 }
 
 .post .thumbnail-break {
@@ -598,6 +599,18 @@ section.page {
     text-transform: uppercase;
 }
 
+.wrap-main.page>.main {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.single.page .title {
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
 .single .break {
     display: none;
 }
@@ -606,6 +619,10 @@ section.page {
     line-height: 1.5;
     color: #323232;
     margin-top: 10px;
+}
+
+.single .post-content p:first-child {
+    margin-top: 0px;
 }
 
 .single .post-content p {
@@ -1024,6 +1041,10 @@ aside.sidebar {
     background-color: #5f73b2;
 }
 
+section.single .sidebar .discord a .break {
+    display: none;
+}
+
 .sidebar h1.title {
     font-size: 25px;
     padding-bottom: 15px;
@@ -1373,6 +1394,10 @@ footer.main p.right a:last-child {
         margin-bottom: 0px;    
     }
     
+    .wrap-main.page {
+        margin-top: 30px;
+    }
+    
     nav.main {
         padding-top: 14px;
         text-align: center;
@@ -1533,7 +1558,8 @@ footer.main p.right a:last-child {
 
 @media screen and (max-width: 700px) {
     
-    div.wrap-main {
+    
+    div.wrap-main:not(.page) {
         box-shadow: none;
         background-color: transparent;
     }
@@ -1630,7 +1656,7 @@ footer.main p.right a:last-child {
         margin-bottom: 30px;
     }
     
-    section.main {
+    .wrap-main:not(.page) section.main {
         padding: 0px;
     }
     

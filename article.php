@@ -5,7 +5,7 @@
         <h3 class="cat"><?php echo article_custom_field('theme'); ?></h3>
         <h1 class="title"><?php echo article_title(); ?></h1>
     </div>
-    <section class="main large">
+    <section class="main single">
         <section class="page">
             <article class="single">
                 <div class="content">
