@@ -19,8 +19,8 @@
                         <p>Publié le <?php echo gmdate("d/m/Y", article_time()); ?>, par <?php echo article_author(); ?></p>
 
                         <ul class="socials">
-                            <li><div class="fb-like" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></li>
-                            <li><a class="twitter-share-button" href="https://twitter.com/intent/tweet" data-text="Alpha :" data-hashtags="Minecraft">Tweet</a></li>
+                            <li><a href="http://www.facebook.com/share.php?u=<?=full_url().current_url()?>&title=<?php echo article_title(); ?>" class='fb'>Facebook</a></li>
+                            <li><a href='http://twitter.com/intent/tweet?status=<?php echo article_title() ?>+<?=full_url().current_url()?>' class="twitter">Twitter</a></li>
                         </ul>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                                 (d.head || d.body).appendChild(s);
                             })();
                         </script>
-                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                        <noscript>Merci d'activer le JavaScript pour voir les commentaires</noscript>
                     </div>
                 <?php endif; ?>
             </article>
