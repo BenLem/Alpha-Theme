@@ -18,6 +18,11 @@
         </footer>
 
         <!-- Scripts -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
         <script>
             function drpDown() {
                 document.getElementById("nav-drpdwn").classList.toggle("show");
@@ -39,10 +44,6 @@
             }
         </script>
 
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script>
-        
-        <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
-    
         <script>$(function(){
                 var ink, d, x, y;
                 $(".ripple").click(function(e){
