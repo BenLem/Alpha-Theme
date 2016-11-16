@@ -1130,6 +1130,8 @@ footer.main {
     background-color: #2D3039;
     color: #777;
     padding: 62px 0px;
+    position: relative;
+    padding-bottom: 97px;
 }
 
 footer.main:hover p.left {
@@ -1147,6 +1149,12 @@ footer.main a {
     color: #c9c9c9;
     text-decoration: none;
     position: relative;
+}
+
+footer.main .right a {
+    color: inherit;
+    font-weight: 400;
+    color: #454a57;
 }
 
 footer.main a:after {
@@ -1169,6 +1177,11 @@ footer.main a:active:after {
     width: 100%;
 }
 
+footer.main .right a:hover:after,
+footer.main .right a:active:after {
+    width: 0%;
+}
+
 footer.main p.left {
     cursor: default;
     opacity: .7;
@@ -1181,19 +1194,21 @@ footer.main p.right {
     max-width: 650px;
     text-align: right;
     cursor: default;
-    color: #454a57;
 }
 
-footer.main p.right a {
-    font-weight: bold;
-}
-
-footer.main p.right a:last-child {
-    display: block;
+footer.main nav.foot {
+    text-align: center;
+    background-color: red;
     position: absolute;
-    top: 16px; right: 20px;
-    opacity: .7;
-    margin: 4px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    padding: 15px 0px;
+    background-color: #292b31;
+    opacity: .5;
+    font-size: 13px;
 }
 
 /* --- Page 404 --- */

@@ -6,11 +6,15 @@
                 <p class="left">
                     <b style="font-size: 20px;"><span style="color: rgba(211, 1, 14, 0.63)">ALPHA</span></b> est un serveur PvP/Faction <a href="http://minecraft.net/">Minecraft™</a>
                 </p>
-
+                
                 <p class="right">
-                    &copy <?php echo date('Y'); ?> Alpha-Craft
+                    <a href='http://play.alpha-craft.co'>play.alpha-craft.co</a>
                 </p>
             </div>
+            
+            <nav class='foot'>
+                    <p>&copy <?php echo date('Y'); ?> Alpha-Craft - <a href='<?php echo base_url(); ?>mentions-legales'>Mentions légales</a> - Powerd by <a href='http://anchorcms.com'>Anchor</a></p>
+                </nav>
         </footer>
 
         <!-- Scripts -->
