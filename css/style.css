@@ -1534,7 +1534,7 @@ footer.main nav.foot {
     nav.break ul li a {
         margin: auto;
         width: 100%;
-        padding: 25px 0px;
+        padding: 20px 0px;
         border-bottom: 2px solid rgba(255,255,255,.1);
         overflow: hidden;
     }
@@ -1595,7 +1595,6 @@ footer.main nav.foot {
 
 
 @media screen and (max-width: 700px) {
-    
     
     div.wrap-main:not(.page) {
         box-shadow: none;
