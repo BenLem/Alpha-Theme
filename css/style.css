@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,400i');
+
 /* GENERAL */
 
 body {
@@ -787,6 +789,15 @@ section.page {
     display: inline;
     font-family: "Open Sans";
     opacity: .8;
+}
+
+.post-content code {
+    font-family: "Roboto Mono", sans-serif;
+    background-color: #e1f1f2;
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid #ccdfe0;
+
 }
 
 .post-content img {
