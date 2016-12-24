@@ -47,6 +47,99 @@ table {
 	border-spacing: 0;
 }
 
+/* ---
+
+
+    ---- ICONS ----
+
+
+--- */
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?mz2h1t');
+    src:    url('../fonts/icomoon.eot?mz2h1t#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?mz2h1t') format('truetype'),
+        url('../fonts/icomoon.woff?mz2h1t') format('woff'),
+        url('../fonts/icomoon.svg?mz2h1t#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-quill:before {
+    content: "\e900";
+}
+.icon-lock:before {
+    content: "\e901";
+}
+.icon-cog:before {
+    content: "\e902";
+}
+.icon-heart:before {
+    content: "\e903";
+}
+.icon-happy:before {
+    content: "\e904";
+}
+.icon-happy2:before {
+    content: "\e905";
+}
+.icon-wink:before {
+    content: "\e906";
+}
+.icon-wink2:before {
+    content: "\e907";
+}
+.icon-grin:before {
+    content: "\e908";
+}
+.icon-grin2:before {
+    content: "\e909";
+}
+.icon-cool:before {
+    content: "\e90a";
+}
+.icon-cool2:before {
+    content: "\e90b";
+}
+.icon-shocked:before {
+    content: "\e90c";
+}
+.icon-shocked2:before {
+    content: "\e90d";
+}
+.icon-confused:before {
+    content: "\e90e";
+}
+.icon-confused2:before {
+    content: "\e90f";
+}
+.icon-hipster:before {
+    content: "\e910";
+}
+.icon-hipster2:before {
+    content: "\e911";
+}
+.icon-youtube2:before {
+    content: "\e912";
+}
+
+
 
 
 
@@ -340,6 +433,38 @@ article.quick-news.rouge p:before {
 
 
 --- */
+
+.unslider{overflow:auto;margin:0;padding:0;position:relative}.unslider-wrap{position:relative}.unslider-wrap.unslider-carousel>li{float:left}.unslider-vertical>ul{height:100%}.unslider-vertical li{float:none;width:100%}.unslider-fade{position:relative}.unslider-fade .unslider-wrap li{position:absolute;left:0;top:0;right:0;z-index:8}.unslider-fade .unslider-wrap li.unslider-active{z-index:10}.unslider li,.unslider ol,.unslider ul{list-style:none;margin:0;padding:0;border:none}.unslider-arrow{position:absolute;left:20px;z-index:2;cursor:pointer}.unslider-arrow.next{left:auto;right:20px}
+
+.unslider-nav {
+    position: absolute;
+    top: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.unslider-nav ol {
+    list-style: none;
+    text-align: center;
+}
+.unslider-nav ol li {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 5px;
+    background: transparent;
+    border-radius: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.unslider-nav ol li.unslider-active {
+    background: #fff;
+    cursor: default;
+}
 
 .slider li {
     height: 400px;
