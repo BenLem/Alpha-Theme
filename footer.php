@@ -13,7 +13,7 @@
             </div>
             
             <nav class='foot'>
-                    <p>&copy <?php echo date('Y'); ?> Alpha-Craft - <a href='<?php echo base_url(); ?>mentions-legales'>Mentions légales</a> - Powerd by <a href='http://anchorcms.com'>Anchor</a></p>
+                    <p>&copy; 2016-<?php echo date('Y'); ?> Alpha-Craft - <a href='<?php echo base_url(); ?>mentions-legales'>Mentions légales</a> - Powerd by <a href='http://anchorcms.com'>Anchor</a></p>
                 </nav>
         </footer>
 
