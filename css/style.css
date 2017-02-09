@@ -1106,6 +1106,26 @@ section.page {
     margin: auto;
 }
 
+.post-content figure {
+    display: table;
+    margin: auto;
+}
+
+.post-content figure figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background-color: #a7a7a7;
+    opacity: .5;
+    padding: 8px 5px;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.post-content figure figcaption a {
+    border-color: #282d3e;
+    border-color: rgba(40, 45, 62, 0.5);
+}
+
 .post-content img.alignright {
     float: right;
     margin-left: 20px;
