@@ -30,7 +30,7 @@
                                         } else {
                                             echo excerpt(article_description(), 190);
                                         }
-                                        
+
                                         ?></div>
                                     
                                     <div class="infos-break">Posté le <?php echo gmdate("d/m", article_time()); ?> - <span class='cat'><?php echo article_custom_field('theme'); ?></span></div>
