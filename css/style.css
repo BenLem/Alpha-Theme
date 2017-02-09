@@ -366,8 +366,8 @@ nav.main nav.links .inactive {
 
 article.quick-news {
     margin: auto;
-    margin-top: -32px;
-    margin-bottom: 42px;
+    margin-top: 0;
+    margin-bottom: 22px;
     color: #000;
     color: rgba(0,0,0,.5);
     background-color: #e1ffce;
