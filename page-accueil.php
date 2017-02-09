@@ -24,7 +24,14 @@
                                 <span class="infos"><span class="cat"><?php echo article_custom_field('theme'); ?></span> - <?php echo gmdate("d/m", article_time()); ?></span>
 
                                 <div class="excerpt">
-                                    <div class='text'><?php echo strip_tags(excerpt(article_html(), 205)); ?></div>
+                                    <div class='text'><?php
+                                        if (article_description() == '') {
+                                            echo strip_tags(excerpt(article_html(), 205));
+                                        } else {
+                                            echo excerpt(article_description(), 190);
+                                        }
+                                        
+                                        ?></div>
                                     
                                     <div class="infos-break">Posté le <?php echo gmdate("d/m", article_time()); ?> - <span class='cat'><?php echo article_custom_field('theme'); ?></span></div>
                                 </div>
